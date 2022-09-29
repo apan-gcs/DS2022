@@ -1,3 +1,4 @@
+# Basic random sampling and statistics (mean, stdev)
 
 import random
 import statistics as stats   # Common module for basic stats functions
