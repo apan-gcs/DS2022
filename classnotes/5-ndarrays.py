@@ -21,9 +21,9 @@ for i in x:
     print(i)
 
 # [USEFUL!] Two functions for generating evenly-spaced numbers
-# Use arange() for integers, linspace() for floating point numbers
-print(np.arange(1, 6))          # Same as range(), but for ndarrays; [1,6)
-print(np.linspace(0, 10, 11))   # start, end, num (number of points generated)
+# Generally, arange() is useful for ints (similar to range())
+print(np.arange(1, 6, 1))      # start, end, (optional) stepsize
+print(np.linspace(0, 10, 11))  # start, end, num (number of points generated)
 
 # You can also find functions like sin, cos, arctan, etc.
 # https://numpy.org/doc/stable/reference/routines.math.html
