@@ -21,7 +21,7 @@ y3 = 2 * np.sin(x) + 10      # y = 2sin(x) + 10
 # PART 1.5) Plot design (OPTIONAL)
 # Use preset style sheets / "xkcd" style (they sort of conflict)
 # plt.style.use("seaborn-darkgrid")
-# plt.xkcd(0.8)
+# plt.xkcd(0.5, 100, 4)
 
 
 # PART 2) Plotting data

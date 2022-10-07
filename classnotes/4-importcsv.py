@@ -3,13 +3,14 @@
 from pandas import read_csv
 
 # Paste the file path to your csv here.
-# The .csv file must be in the same folder as your program.
+# The file must be in your working directory (usually same as your program)
 filename = "pets.csv"
 
+# Importing the file as a pandas.DataFrame
+# In this case, single-column and no header
+data = read_csv(filename, header = None)
 
-# Importing the file as a DataFrame
 # Then converting in to a regular list
-data = read_csv(filename, header=None)
 data = data[0].values.tolist()
 
 print(data)
