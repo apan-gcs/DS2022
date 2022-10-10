@@ -22,7 +22,7 @@ print(years)
 print(pop)
 
 # Optional: Convert population into billions
-#pop = df['Population'] / (10 ** 9)
+pop = df['Population'] / (10 ** 9)
 
 
 # Try plotting Population vs. Year
@@ -32,7 +32,10 @@ plt.plot(years, pop)
 
 plt.title("World Population")
 plt.xlabel("Year")
-plt.ylabel("Population")
-#plt.ylabel("Population (in billions)")
+#plt.ylabel("Population")
+plt.ylabel("Population (in billions)")
 
-plt.show()
+plt.xlim(1800, 2022)
+plt.xticks(range(1800, 2021, 20), rotation = 50)
+
+#plt.show()
